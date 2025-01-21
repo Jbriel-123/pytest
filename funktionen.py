@@ -12,7 +12,7 @@ def multipliziere(a, b):
     return a * b
 
 def dividiere(a, b):
-    """Dividiert zwei Zahlen. Wirft einen Fehler bei Division durch Null."""
+    """Dividiert zwei Zahlen. Wirft einen Fehler bei Division durch null."""
     if b == 0:
         raise ZeroDivisionError("Division durch Null ist nicht erlaubt.")
     return a / b
