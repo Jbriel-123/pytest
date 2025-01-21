@@ -9,9 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest # Betriebssystem des Runners
-    strategy:
-      matrix:
-        python-version: ['3.8', '3.9', '3.10', '3.11'] # Teste mit verschiedenen Python-Versionen
+    container:
+      image: python:3.9-slim
 
     steps:
     - uses: actions/checkout@v3 # Repository auschecken
